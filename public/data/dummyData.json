@@ -1,0 +1,91 @@
+{
+    "firstname": "David",
+    "lastname": "Mogollon",
+    "id":"8.698.084",
+    "mother_maiden_name":"Fernandez",
+    "date_of_birth": "17/04/1991",
+    "marital_status":"Single",
+    "email":"david.fernandez@osf-commerce.com",
+    "profesional_card":"",
+    "address": {
+        "streetAddress": "Calle 78 # 57 - 75, casa 5",
+        "city": "Barranquilla",
+        "state": "Atlantico"
+
+    },
+    "projects":[        
+            {
+                "projectName" :"Project 1",
+                "tasks" : [
+                  { 
+                  "taskname":"{Tablet} Tablet version has no space on the left",
+                  "id":"SPCW-215",
+                  "type":"Bug",
+                  "asignee":"david.fernandez",
+                  "description":"{Tablet} Tablet version has no space on the left",
+                  "estimate" : "10:00:00",
+                  "current" : "00:35:00",
+                  "comments":[
+                      {
+                          "owner":"david.fernandez",
+                          "body":"A padding was added between medium and x-large breakpoints. Smaller breakpoints inherit another padding behaviour from foundation."
+                      },
+                      {
+                          "owner":"julia.oneshchuk",
+                          "body":"PR is merged and FTP is updated"
+                      }
+                  ]
+                }
+              ]
+                
+            },
+            {
+                "projectName" :"Project 2",
+                "tasks" : [
+                { 
+                  "taskname":"OSF task 2",
+                  "id":"OSF-02",
+                  "type":"BUG",
+                  "asignee":"david.fernandez",
+                  "description":"This is the task description",
+                  "estimate" : "10:00:00",
+                  "current" : "00:00:00",
+                  "comments":[
+                      {
+                          "owner":"david.fernandez",
+                          "body":"hey guys, this is a coment from this task"
+                      },
+                      {
+                          "owner":"david.fernandez",
+                          "body":"hey guys, this is a SECOND coment from this task"
+                      }
+                  ]
+                }
+
+
+              ]
+                
+            }
+          ],
+    "events":[
+      {
+        "date":"March 9 -  2018",
+        "name":"OSF Hackaton 2018",
+        "description":"This is a competition for OSF employees, to build the best app in 48 hours, this year Context is Gamification applied to daily work",
+        "status" :"On going"
+      },
+      {
+        "date":"November 17 -  2017",
+        "name":"OSF Fortaleza meeting",
+        "description":"This event gathered  all the OSF employees from South America in Fortaleza - Brasil",
+        "status" :"Completed"
+      }
+    ]
+
+
+      
+          
+
+    
+
+}

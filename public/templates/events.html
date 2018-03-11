@@ -1,0 +1,30 @@
+<div class="events">
+    <table class="table table-bordered">
+
+        <tbody>
+            <tr class="tr_header">
+
+                <td >
+                    <h3>Events</h3>
+                </td>
+                <td colspan="3"><i class="fas fa-info-circle" aria-hidden="true"></i></td>
+
+            </tr>
+            <tr>
+                <td><i class="fas fa-list-ul" aria-hidden="true"></i><b> Date </b></td>
+                <td><i class="fas fa-list-ul" aria-hidden="true"></i><b> Event Name </b></td>
+                <td><i class="fas fa-clock" aria-hidden="true"></i><b> Description</b></td>
+                <td><i class="far fa-clock" aria-hidden="true"></i><b> Status</b></td>
+            </tr>
+            <tr  ng-repeat="event in events">
+                <td>{{event.date}}</td>
+                <td>{{event.name}}</td>
+                <td>{{event.description}}</td>
+                <td>{{event.status}}</td>
+            </tr>
+
+        </tbody>
+    </table>
+	
+</div>
+<script type="text/javascript" src="../js/custom.js"></script>

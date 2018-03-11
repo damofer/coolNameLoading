@@ -1,0 +1,122 @@
+.task{
+	flex: 1 ;
+	display: flex;
+	flex-direction: column;
+	&__header{
+		margin-bottom: 10px;
+		h4{
+			background: gray;
+			min-height: 50px;
+			width: 250px;
+			display: flex;
+			color: white;
+			justify-content:center;
+			align-items:center;
+			font-size: 26px;
+			border-radius: 3px;
+		}
+	}
+	&__description,&__comments,&__progress,&__timers{
+		margin: 15px 0;
+		padding: 5px;
+		border: 1px solid rgba(#000,0.4);		
+		border-radius: 3px;
+	}
+	&__description{
+		min-height: 80px;
+		&-container{
+			p{
+
+			}
+		}
+	}
+	&__comments{
+		min-height: 100px;
+		overflow-y: auto;
+		&__container{
+			display:flex;
+			min-height: 50px;
+			flex-direction: column;
+			span{
+				font-size: 10px;
+				font-weight: bold;
+				margin-top: 10px;
+			}
+		}
+	}
+	&__progress{
+		min-height: 50px;
+	}
+	&__timers{
+		min-height: 150px;
+		display: flex;
+		flex-direction: column;
+		justify-content:center;
+		align-items: center;
+		&__counter{
+			text-align:center;
+			max-width: 400px;
+			width: 100%;
+			border: 1px solid rgba(#000, 0.3);
+			margin-bottom: 20px;
+			display: flex;
+			justify-content: space-around;
+			h2{
+				font-size: 30px;
+			}
+			.counter-time{
+
+			}
+			.counter-estimation{
+				color:$main-blue;
+			}
+
+		}
+		&__action{
+			display:flex;
+			font-size: 30px;
+			min-height: 50px;
+			.timer-start,.timer-stop,.timer-pause,.timer-reset{
+				min-width: 200px;
+				padding: 5px;
+				display: flex;
+				justify-content:center;
+				align-items:center;
+				color: white;
+				margin: 5px;
+				cursor: pointer;
+			}
+			.timer-start{
+				background:$main-green;
+				
+			}
+			.timer-stop{
+				background:$main-red;
+			}
+			.timer-pause{
+				background:$main-red;
+			}
+			.timer-reset{
+				background:$main-blue;
+			}
+		}
+	}
+}
+.ui-progressbar {
+    position: relative;
+  }
+  .progress-label {
+    position: absolute;
+    left: 0;
+    right: 0;
+   
+    text-align:center;
+    top: 30%;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
+  }
+  #progressbar{
+	.overtime{
+		background: $main-red;
+	}
+  }

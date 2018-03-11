@@ -1,0 +1,188 @@
+.profile{
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:center;
+    flex: 1;
+    font-size: 15px;
+    .title{
+        max-height: 40px;
+        background: gray;
+        text-align:center;
+        color: #fff;
+    }
+    .profile-details{
+        width: 100%;
+        display:flex;
+        flex-direction:row;
+        justify-content:space-around;
+        .personal-details{
+            display:flex;
+            flex: 1;
+            border: 1px solid black;
+            flex-direction: column;
+            margin: 10px;
+
+            &__container{
+                display:flex;
+                flex-direction:column;
+                padding: 20px;
+            }
+            &__fullname{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            &__name,&__lastname,&__email{
+                border: 1px solid #000;
+                width: 48%;
+                text-align:center;
+                padding: 10px;
+                margin: 10px 0; 
+            }
+
+
+            &__edit{
+                flex: 1;
+                display: flex;
+                justify-content: space-around;
+                text-align:center;
+                a{
+                    padding: 5px;
+                    min-width: 100px;
+                    border: 1px solid black;
+                    border-radius: 3px;
+                }
+                .edit-button{
+                    
+                }
+                .cancel-button{
+
+                }
+            }
+        }
+        .certification-details{
+            display:flex;
+            flex: 1;
+            border: 1px solid black;
+            flex-direction: column;
+            margin: 10px;
+            &__container{
+                display:flex;
+                flex : 1;
+                flex-direction: column;
+                align-items: center;
+                .certification-row{
+                   
+                    width: 100%;
+                    display:flex;
+                    justify-content: flex-start;
+                    flex-direction: row;
+                    padding: 10px;
+                    border-bottom: 1px solid black;
+
+                    a{
+                        text-align:center;
+                        min-width: 100px;
+                        margin-left: auto;
+                        margin-right: 30px;
+                        text-decoration: none;
+                        color: inherit;
+                        background: rgba(#777, 0.5);
+                    }
+                }
+                .add-cert-button{
+                    flex: 1;
+                    display: flex;
+                    max-width: 300px;
+                    width: 100%;
+                    margin-top: auto;
+                    margin-bottom: 10px;
+                    text-align:center;
+                    max-height: 30px;
+                    justify-content:center;
+                    align-items: center;
+                    border: 1px solid black;
+                    color: inherit;
+
+                }
+            }
+        }
+    }
+    .achievements{
+        display:flex;
+        width: 100%;
+        border: 1px solid black;
+        flex-direction: column;
+        margin: 10px;
+
+        &__container{
+            display:flex;
+            flex-direction:row;
+            justify-content:space-around;
+
+        }
+        &__summary, &__points,  &__awards{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex: 1;
+            min-height: 200px;
+            min-width: 300px;
+            border: 1px solid #000;
+            margin: 10px;
+
+        }
+
+    }
+}
+
+
+/* <div class="profile">
+    <div class="profile-details">
+
+        <div class="personal-details">
+            <div class="title"></div>
+            <div class="personal-details__container">
+                <div class="personal-details__fullname">
+                    <div class="personal-details__name">David</div>
+                    <div class="personal-details__lastname">Mogollon</div>
+                </div>
+                <div class="personal-details__email">david.fernandez@osf-commerce.com</div>
+                <div class="personal-details__edit">
+                    <a href="#" class="edit-button">Edit</a>
+                    <a href="#" class="cancel-button">Cancel</a>
+                </div>
+            </div>
+        </div>
+        <div class="certification-details">
+            <div class="title"></div>
+            <div class="certification-details__container">                       
+                <div class="certification-row">
+                    <div class="certication-name">Certification 1</div>
+                    <a href="#" class="edit-button">Edit</a>
+                </div>
+                <div class="certification-row">
+                    <div class="certication-name">Certification 2</div>
+                    <a href="#" class="edit-button">Edit</a>
+                </div>
+                <div class="certification-row">
+                    <div class="certication-name">Certification 3</div>
+                    <a href="#" class="edit-button">Edit</a>
+                </div>
+                <a href="#" class="add-cert-button">Add New Certificate</a>                
+            </div>
+
+        </div>       
+    </div>
+
+    <div class="achievements">
+        <div class="title"></div>
+        <div class="achievements__container">
+            <div class="achievements__summary">Summary</div>
+            <div class="achievements__points">Total Points</div>
+            <div class="achievements__awards">Awards & Badges</div>
+        </div>
+    </div>
+</div> */

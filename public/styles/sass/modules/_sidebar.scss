@@ -1,0 +1,39 @@
+.sidebar{
+    flex: 1;
+    max-width: 300px;
+    background: $main-orange;
+    border: 3px solid rgba(black, 0.4);
+    border-top-right-radius: 5px;
+    ul{
+
+        li{
+            min-height: 50px;                    
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            color: white;
+            font-size: 22px;
+            padding: 5px 0;
+            &:hover{
+                cursor: pointer;
+            }
+            h4{
+                background: rgba(black, 0.8);
+                padding: 5px;
+            }
+            .sidebar__task-list{
+                padding-left: 25px;
+                li{
+                    border-bottom: 1px solid #fff;  
+                    padding: 5px;
+                    &:hover,&:active{
+                        background: black;
+                    }
+                    a{
+                        color: inherit;
+                    }
+                }
+            }
+        }
+    }
+}

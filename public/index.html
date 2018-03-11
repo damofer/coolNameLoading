@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Cool Name Loading</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/styles/css/main.css">
+    
+    
+</head>
+
+<body ng-app="app" ng-controller="mainController">
+
+<div  ng-if="user" class="header" ng-controller="mainController">
+    <div class="user_bar">
+        <a hidden class="user_bar-color-1" href="#"></a>
+        <a hidden class="user_bar-color-2"></a>
+        <a hidden class="user_bar-color-3"></a>
+        <a hidden class="user_bar-color-4" href="/logout"></a>
+        <a id="open-modal" href="#/profile">
+            <div class="user_bar-profile animated bounceInRight ">
+                <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+                <img class="profile_thumbnail" src="images/profile_picture.jpg">
+                <h3>{{main_info.firstname}} {{main_info.lastname}} </h3>              
+
+            </div>
+            <span hidden id="hidden-profile-click">Profile</span>
+        </a>
+    </div>
+    <div class="division">            
+        <hr class="division_line">
+    </div>
+</div>         
+<div class="container">      
+    <div ng-if="user" ng-include="'templates/sidebar.html'" class="sidebar"></div>
+    <div class="main__container animated fadeInUp"  ng-view></div>  
+
+</div>
+    <script defer type="text/javascript" src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+    <script type="text/javascript" src="js/libs/angular.min.js"></script>
+    <script type="text/javascript" src="js/libs/angular-route.min.js"></script>
+    
+    <script type="text/javascript" src="/js/libs/animatedModal.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- <script src="js/route-config.js"></script> -->
+    <script type="text/javascript" src="js/services/dataService.js"></script>   
+    <script type="text/javascript" src="js/controllers/mainCtrl.js"></script>
+    <script type="text/javascript" src="js/controllers/dashboardCtrl.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/modal-handler.js"></script>
+    <script type="text/javascript" src="js/libs/easytimer.min.js"></script>
+    <script type="text/javascript" src="js/controllers/taskCtrl.js"></script>
+    <script type="text/javascript" src="js/controllers/summaryCtrl.js"></script>
+    <script type="text/javascript" src="js/controllers/eventCtrl.js"></script>
+
+
+    
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<div class="task">
+    <div class="task__header">
+        <h4>{{task.id}}</h4>
+    </div>
+    <h4>Description</h4>
+    <div class="task__description">
+        <div class="task__description-container">
+            <p>{{task.description}}</p>          
+        </div>
+    </div>
+    <h4>Task Comments</h4>
+    <div class="task__comments">
+        <div class="task__comments__container" ng-repeat="comment in task.comments">
+            <p>{{comment.body}}</p>
+            <span>{{comment.owner}}</span>
+        </div>
+    </div>
+    <div id="progressbar" class="task__progress">
+        <div class="progress-label">Loading..</div>
+        
+    </div>
+    <div class="task__timers">
+        <div class="task__timers__counter"> 
+            <div class="counter-time">
+                <h2 >{{task.current}}</h2>
+                <span class="time-label">Current</span>
+            </div>
+            <div class="counter-estimation">
+                <h2 >{{task.estimate}}</h2>
+                <span class="time-label">Estimation</span>
+            </div>
+            
+        </div>
+        <div class="task__timers__action"> 
+            <a class="timer-start"> Start</a>
+            <a class="timer-pause"> Pause</a>
+            <a class="timer-stop"> Stop</a>
+            <a class="timer-reset"> Reset</a>
+        </div>
+        
+    </div>
+</div>

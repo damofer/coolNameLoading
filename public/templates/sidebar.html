@@ -1,0 +1,12 @@
+<ul>
+    <li class="sidebar__project" ng-repeat ="project in main_info.projects ">
+        <h4>{{project.projectName}}</h4>
+        <ul class="sidebar__task-list">
+            <li ng-repeat ="task in project.tasks">
+                <a href="#/task/{{task.id}}">
+                    <strong>{{task.id}}</strong> - {{task.taskname}}
+                </a>
+            </li>            
+        </ul>
+    </li>               
+</ul>

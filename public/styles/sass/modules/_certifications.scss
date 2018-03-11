@@ -1,0 +1,145 @@
+
+ 
+ 
+
+
+    .certifications{
+      padding-top: 1.5rem;
+      max-width: $v6_form-width;
+      width: 100%;
+      
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      
+      justify-content: center;
+      border-top: 10px solid #ffcc66;
+      margin-top: 1rem;
+      
+      #myTimeline{
+        padding-top:1rem;
+        max-width: 100%;
+        overflow: auto;
+        height: auto;
+      }
+
+
+     
+      table, th, td {
+          border: 1px solid rgba(black,0.2);
+      }
+       table, th {
+          
+          border-top: 0px;
+          display: flex;
+          justify-content: center;
+          i{
+            margin-right: 5px;
+
+          }
+          
+      }
+      th,td{
+        word-wrap: break-word;
+        padding: 10px;
+       
+        
+        flex : 1;
+        i{
+            
+              justify-content: center;
+              color:$v2_color_2;
+        }
+        
+          
+      }
+      tr >th{
+        flex:1;
+      }
+      tr > td{
+        flex:1;
+        max-width: 25%;
+       
+      }
+      
+     
+      tr{
+        text-align: center;
+        
+        td{
+          display: flex;
+          justify-content:center;
+          vertical-align: middle;
+          align-items:center;
+          text-align: center;
+          font-size: 1rem;
+          vertical-align: middle;
+          a{
+            display: block;
+              transition: .4s;
+            &:hover{
+              transform: scale(1.4);
+            }
+            color:$v2_color_2;
+          
+          }
+          i{
+        
+           color:#10cfbd;
+
+          
+
+          }
+        }
+        
+      }
+
+        table{
+        padding: 10px;
+        height: 95%;
+       display: flex;
+       flex-direction:column;
+        
+          border-collapse: collapse;
+          thead{
+            tr{
+              width: 100%;
+              display: flex;
+              th{
+                flex:1;
+                &:first-child{
+                 flex: 1;
+                }
+              }
+            }
+          }
+          tbody{
+           
+            overflow: auto;
+            tr{
+              display: flex;
+              td{
+                flex:1;
+                &:first-child{
+                   flex: 1;
+
+                }
+              }
+            }
+            
+          }
+
+      }
+
+    }
+
+
+
+
+
+
+
+section#timeline:before{
+  z-index: -1;
+
+}

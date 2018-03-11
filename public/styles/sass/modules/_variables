@@ -1,0 +1,87 @@
+/* Colores Vista 1 */
+$v1_color_1:#666699;
+$v1_color_2:#3399ff;
+$v1_color_3:#00cccc;
+$v1_color_4:#ff6666;
+$v1_color_5:#ffcc66;
+$v1_color_6:#cccccc;
+$v1_color_7:#666666;
+$v1_form-color:white;
+$v1_color-input:#ebebeb;
+/* dimensiones header */
+$v2_division_line-width:100%;
+$v2_search_box-width:250px;
+$v2_search_box-height:50px;
+
+/* Dimensiones Vista 1 */
+$v1_profile-margin:35px;
+$v1_input-margin: 17.5px 0;;
+$v1_input_item-height: 55px;
+$v1_input_item-width: 385px;
+$v1_submit_button-height:48px;
+$v1_submit_button-width:360px;
+$v1_form-height:300px;
+$v1_form-width:440px;
+$v1_form-padding:25px 0 0 0;
+$v1_form_footer-margin: 17.5px 0;
+
+$v1_input-fontSize: 18px;
+
+
+
+/* Vista 2  */
+
+/* colores vista 2*/
+
+$v2_color_1:#f8d053;
+$v2_color_1-hover:#f9d975;
+$v2_color_1-active:#c9a843;
+
+$v2_color_2:#f55753;
+$v2_color_2-hover:#f77975;
+$v2_color_2-active:#c64643;
+
+$v2_color_3:#10cfbd;
+
+$v2_color_3-hover:#40d9ca;
+$v2_color_3-active:#0da899;
+
+$v2_color_4:#48b0f7;
+$v2_color_4-hover:#6dc0f9;
+$v2_color_4-active:#3a8fc8;
+
+$v2_color_5:#6d5cae;
+$v2_color_5-hover:#8a7dbe;
+$v2_color_5-active:#584b8d;
+
+/* dimensiones vista 2 */
+$v2_item-fontSize:21px;
+$v2_body-padding:40px;
+$v2_item-width: 250px;
+$v2_item-height: 100px;
+$v2_item-margin: 20px;
+$v2_container-width: 580px;
+$v2_container-height: 420px;
+
+/* dimensiones vista 3 */
+
+$v3_item-fontSize:21px;
+$v3_body-padding:40px;
+$v3_item-width: 250px;
+$v3_item-height: 100px;
+$v3_item-margin: 20px;
+$v3_container-width: 700px;
+
+
+
+$v6_form-width: 1200px;
+
+
+$break-small: 650px;
+$break-medium: 900px;
+$break-large: 1200px;
+
+$main-green:#10cfbd;
+$main-red:#f55753;
+$main-blue:#48b0f7;
+$main-orange:#ef693a;

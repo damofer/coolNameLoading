@@ -1,0 +1,16 @@
+
+.efreezetable-container {
+  width: 100%;
+  margin: auto;
+}
+
+.efreezetable-fixed {
+  background-color: #FFCD69;
+  border: none;
+  color: #000;
+  display: none;
+  position: fixed;
+  top: 0;
+  width: auto;
+  z-index: 100;
+}

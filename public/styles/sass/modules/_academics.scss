@@ -1,0 +1,45 @@
+.academics{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-self:center;
+	max-width: 950px;
+	width: 95%;
+
+	.academics-item{
+		display: flex;
+		flex-direction:row;
+		align-items:center;
+		justify-content:space-between;
+		padding: 10px;
+		flex-wrap:wrap;
+		h3{
+			flex:1;
+			white-space: nowrap;
+		}
+		table{
+			display: flex;
+		
+			flex:1;
+			padding: 10px;
+			tr,td{
+				padding: 10px;	
+			}
+			td:first-child{
+				font-weight: 600;
+			}
+			td:last-child{
+				display: flex;
+				i{
+					padding-left: 10px;
+					font-size: 1rem;
+					transition:.4s;
+					&:hover{
+						transform:scale(1.5);
+					}
+
+				}
+			}
+		}
+	}
+}
